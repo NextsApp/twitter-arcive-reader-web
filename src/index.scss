@@ -1,0 +1,6 @@
+@import '../node_modules/react-md/src/scss/react-md';
+@include react-md-everything;
+
+.md-paper--1 {
+  box-shadow: none;
+}
