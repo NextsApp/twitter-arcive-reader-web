@@ -2,27 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6eb5f2ac-b322-457d-bd14-0a3b35153aef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/MaterialIcons-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/material-icons-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/material-icons-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/material-icons.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/materialIcons-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/md-fix.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/roboto.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/styles/initial.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/base/base.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/navigation/navigation-items.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/navigation/navigation.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/store.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/app/actions/action-types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/app/actions/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/app/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/app/reducer/app-reducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/app/reducer/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/tweets/containers/tweets.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/tweets/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/tweets/reducer/tweets-reducer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/dashboard/dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/dashboard/dashboard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serviceWorker.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/serviceWorker.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/dashboard/dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/dashboard/containers/dashboard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/dashboard/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/dashboard/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/navigation/navigation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/navigation/navigation.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <list id="c34e2574-2c10-49d0-aa7f-6a04cf7bca1f" name="ignore" comment="" />
@@ -53,6 +47,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/modules/dashboard/containers" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/assets/styles" />
     </key>
@@ -87,11 +82,19 @@
       <option name="project" value="LOCAL" />
       <updated>1570007806525</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add react-material-design and react-route">
+      <created>1570046042693</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1570046042693</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="remove not needed files" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove not needed files" />
+    <MESSAGE value="add react-material-design and react-route" />
+    <option name="LAST_COMMIT_MESSAGE" value="add react-material-design and react-route" />
   </component>
 </project>

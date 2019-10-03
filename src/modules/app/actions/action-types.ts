@@ -1,0 +1,1 @@
+export const APP_STORE_APP_INFO = 'app/APP_STORE_APP_INFO'

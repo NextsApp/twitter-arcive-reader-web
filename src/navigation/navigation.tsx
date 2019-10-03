@@ -29,7 +29,7 @@ const Navigation: React.FunctionComponent = props => {
         toolbarTitle={"Twitter Archive Reader Online"}
         mobileDrawerType={NavigationDrawer.DrawerTypes.TEMPORARY}
         tabletDrawerType={NavigationDrawer.DrawerTypes.TEMPORARY_MINI}
-        desktopDrawerType={NavigationDrawer.DrawerTypes.CLIPPED}
+        desktopDrawerType={NavigationDrawer.DrawerTypes.FULL_HEIGHT}
         navItems={navigationItems.map((props, i) => (
           <NavItemLink {...props} key={i} />
         ))}
