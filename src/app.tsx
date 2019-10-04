@@ -1,19 +1,25 @@
 import * as React from 'react'
 import Navigation from './navigation/navigation'
-import { Provider } from 'react-redux'
+import { connect } from 'react-redux'
 
-import store from './app/store'
+import { selectAppState } from './modules/app/selectors'
+import { APP_STATES } from './modules/app/constants'
+import { ZipReader } from './modules/zip-reader'
 
-class App extends React.Component {
+interface InterfaceAppProps {
+  appState: string
+}
+
+class App extends React.Component<InterfaceAppProps> {
   render() {
-    return (
-      <div className="App">
-        <Provider store={store({})}>
-          <Navigation />
-        </Provider>
-      </div>
-    )
+    return <Navigation />
   }
 }
 
-export default App
+const mapStateToProps = (state: any) => {
+  return {
+    appState: selectAppState(state),
+  }
+}
+
+export default connect(mapStateToProps)(App)
