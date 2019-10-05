@@ -1,6 +1,17 @@
 .zip-reader-container {
   padding-top: 10px;
   text-align: center;
+
+  hr {
+    border: none;
+    height: 1px;
+  }
+
+  a {
+    font-weight: bold;
+    color: $primary;
+    text-decoration: none;
+  }
 }
 
 .file-read-progress-message {

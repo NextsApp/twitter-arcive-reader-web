@@ -1,41 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6eb5f2ac-b322-457d-bd14-0a3b35153aef" name="Default Changelist" comment="add footer component">
-      <change afterPath="$PROJECT_DIR$/src/components/base/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/error-message/error-message.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/error-message/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/footer/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/i18n/i18n.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/i18n/translations/en.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/app/constants.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/app/selectors/app-states.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/app/selectors/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/zip-reader/components/file-info.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/zip-reader/components/file-read-progress.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/zip-reader/components/file-upload-form.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/zip-reader/components/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/zip-reader/constants.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/zip-reader/containers/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/zip-reader/containers/zip-reader.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/zip-reader/helpers/zip-reader.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/zip-reader/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/zip-reader/zip-reader.scss" afterDir="false" />
+    <list default="true" id="6eb5f2ac-b322-457d-bd14-0a3b35153aef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/global-type-definition.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/i18n/translations/de.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/app/actions/app-actions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/zip-reader/helpers/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/styles/initial.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/initial.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/base/base.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/base/base.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/initial.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/initial.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/footer/footer-style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/footer-style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/footer/footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/i18n/i18n.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18n/i18n.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/i18n/translations/en.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18n/translations/en.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/app/actions/action-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/app/actions/action-types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/app/actions/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/app/actions/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/app/reducer/app-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/app/reducer/app-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/dashboard/containers/dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/dashboard/containers/dashboard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/navigation/navigation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/navigation/navigation.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/zip-reader/components/file-read-progress.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/zip-reader/components/file-read-progress.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/zip-reader/constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/zip-reader/constants.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/zip-reader/containers/zip-reader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/zip-reader/containers/zip-reader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/zip-reader/helpers/zip-reader.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/zip-reader/helpers/zip-reader.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/zip-reader/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/zip-reader/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/zip-reader/zip-reader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/zip-reader/zip-reader.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <list id="c34e2574-2c10-49d0-aa7f-6a04cf7bca1f" name="ignore" comment="" />
@@ -146,9 +132,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570210460945</updated>
-      <workItem from="1570210467171" duration="20538000" />
+      <workItem from="1570210467171" duration="37876000" />
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add translation i18next">
+      <created>1570267705456</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1570267705457</updated>
+    </task>
+    <task id="LOCAL-00008" summary="implement reading zip file">
+      <created>1570267731968</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1570267731968</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,6 +173,8 @@
     <MESSAGE value="implement redux" />
     <MESSAGE value="add .editorconfig" />
     <MESSAGE value="add footer component" />
-    <option name="LAST_COMMIT_MESSAGE" value="add footer component" />
+    <MESSAGE value="add translation i18next" />
+    <MESSAGE value="implement reading zip file" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement reading zip file" />
   </component>
 </project>

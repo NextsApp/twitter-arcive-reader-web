@@ -4,7 +4,7 @@ class Footer extends React.PureComponent {
   render() {
     return (
       <div className="footer md-background--primary">
-        <span>copyrigt 2019 by nextsapp</span>
+        <span>Copyright 2019 by (c) nextsapp</span>
       </div>
     )
   }

@@ -16,18 +16,18 @@ h1,
 h2,
 h3,
 h4,
-div,
 span {
   font-family: 'Oswald', sans-serif !important;
-}
-
-a {
-  font-weight: bold;
-  color: $primary;
-  text-decoration: none;
 }
 
 hr {
   border-color: $primary;
   margin: 30px 0;
+}
+
+.md-text--error {
+  font-size: 18px;
+  before {
+    content: 'Error: ';
+  }
 }

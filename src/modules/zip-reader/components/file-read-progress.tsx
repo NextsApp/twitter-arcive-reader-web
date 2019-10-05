@@ -10,7 +10,7 @@ export const FileReadProgress: React.FC<IFileReadProgressProps> = props => {
   return (
     <div>
       {(props.message !== '' || props.message !== undefined) && (
-        <CardText className="file-read-progress-message">Please Wait: {props.message}</CardText>
+        <CardText className="file-read-progress-message">{props.message}</CardText>
       )}
       <CircularProgress id={'load-file'} scale={FILE_READ_PROGRESS_SCALE} />
     </div>

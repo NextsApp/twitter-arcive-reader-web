@@ -1,16 +1,19 @@
 import * as React from 'react'
-import { WithTranslation, withTranslation } from 'react-i18next'
+import { WithTranslation, withTranslation, Trans } from 'react-i18next'
+import TwitterArchive from 'twitter-archive-reader'
+import { connect } from 'react-redux'
 
-import JSZip from 'jszip'
 import { Base, ErrorMessage } from '../../../components'
 import { ZIP_STATE, FileReadProgress, FileUploadForm } from '..'
+import { storeAppState, storeArchiveData } from '../../app'
 
 // interface props & state ---------------------------------------------------------------
-interface InterfaceZipReaderProps extends WithTranslation {}
+interface InterfaceZipReaderProps extends WithTranslation {
+  dispatch: any
+}
 
 interface InterfaceZipReaderState {
   zipState: string | 'loaded' | 'progress' | 'start' | 'error' | 'store' | 'read'
-  files: Array<string>
   fileTypeError: string
 }
 
@@ -20,48 +23,51 @@ class ZipReader extends React.Component<InterfaceZipReaderProps, InterfaceZipRea
     super(props)
     this.state = {
       zipState: ZIP_STATE.START,
-      files: [],
       fileTypeError: '',
     }
   }
 
-  handleFile(file: any) {
-    JSZip.loadAsync(file).then(
-      zip => {
-        console.log('zipLoad')
-        const files: Array<string> = []
-        zip.forEach(function(relativePath, zipEntry) {
-          files.push(zipEntry.name)
-        })
+  async handleFile(file: any) {
+    const { t } = this.props
 
-        this.setState({
-          files,
-          zipState: ZIP_STATE.STORE_DATA_PROGRESS,
-        })
+    const archive = new TwitterArchive(file)
 
-        this.storeData()
-      },
-      (e: any) => {
-        console.error(e)
-        this.setState({
-          fileTypeError: 'Error: invalid file format, you can only upload a zip file',
-          zipState: ZIP_STATE.ERROR,
-        })
-      },
-    )
+    archive.addEventListener('zipready', () => {
+      this.setState({
+        zipState: ZIP_STATE.STORE_DATA_PROGRESS,
+      })
+    })
+
+    archive.addEventListener('tweetsread', async () => {
+      await this.storeData(archive)
+    })
+
+    archive.addEventListener('error', () => {
+      this.setState({
+        fileTypeError: t('notArchiveFile'),
+        zipState: ZIP_STATE.ERROR,
+      })
+    })
   }
 
-  storeData = () => {
+  storeData = async (archive: any) => {
+    const { dispatch } = this.props
+    await archive.ready()
+
+    dispatch(storeAppState('ready'))
+    // @ts-ignore
+    window.twitterArchive = archive
+
     this.setState({
       zipState: ZIP_STATE.LOADED,
     })
   }
 
-  handleLoad = (fileEvent: any) => {
-    this.handleFile(fileEvent)
+  handleLoad = async (fileEvent: any) => {
     this.setState({
       zipState: ZIP_STATE.READ_DATA_PROGRESS,
     })
+    await this.handleFile(fileEvent)
   }
 
   handleLoadStart = () => {
@@ -81,6 +87,8 @@ class ZipReader extends React.Component<InterfaceZipReaderProps, InterfaceZipRea
   }
 
   renderContent() {
+    const { t } = this.props
+
     switch (this.state.zipState) {
       case ZIP_STATE.PROGRESS:
         return <FileReadProgress message={this.props.t('File is being uploaded')} />
@@ -88,13 +96,13 @@ class ZipReader extends React.Component<InterfaceZipReaderProps, InterfaceZipRea
         return <FileReadProgress message={this.props.t('File is read')} />
       case ZIP_STATE.STORE_DATA_PROGRESS:
         return <FileReadProgress message={this.props.t('Data are store')} />
-
       case ZIP_STATE.LOADED:
         return <div>loaded</div>
       case ZIP_STATE.START:
       default:
         return (
           <FileUploadForm
+            label={t('chooseYourFile')}
             onLoad={this.handleLoad}
             onLoadStart={this.handleLoadStart}
             onProgress={this.handleProgress}
@@ -103,29 +111,27 @@ class ZipReader extends React.Component<InterfaceZipReaderProps, InterfaceZipRea
     }
   }
 
-  renderFileList() {
-    return <div>{this.state.files.join('\n')}</div>
-  }
-
   render() {
-    console.log('files => ', this.state.files)
-
+    const { t } = this.props
     return (
       <Base>
         <div className="zip-reader-container">
-          <h2>Willkommen zur "Online Twitter Archive Reader" </h2>
+          <h2>{t('Welcome to the twitter archive reader')}</h2>
           <h4>
-            Falls du eine Archiv "Zip-Datei" vom <a href="http://twitter.com">Twitter</a> bekommen hast,
-            <br /> kannst du sie hier durch unseren System auslesen lassen und deinen archive betrachten.
+            <Trans i18nKey="zipReaderDescription">
+              [StartDemoString] /* overwritten from i18n */
+              <a href="http://twitter.com">Twitter</a>
+              [EndDemoString]/* overwritten from i18n */
+            </Trans>
           </h4>
-          <hr className="md-background--primary" />
-          {this.state.fileTypeError !== '' && <ErrorMessage message={this.state.fileTypeError} />}
+
+          <hr className="md-background--primary " />
+          {this.state.fileTypeError !== '' && <ErrorMessage message={t(this.state.fileTypeError)} />}
           {this.renderContent()}
-          <div>{this.renderFileList()}</div>
         </div>
       </Base>
     )
   }
 }
 
-export default withTranslation()(ZipReader)
+export default connect()(withTranslation()(ZipReader))
