@@ -3,8 +3,6 @@ import Navigation from './navigation/navigation'
 import { connect } from 'react-redux'
 
 import { selectAppState } from './modules/app/selectors'
-import { APP_STATES } from './modules/app/constants'
-import { ZipReader } from './modules/zip-reader'
 
 interface InterfaceAppProps {
   appState: string

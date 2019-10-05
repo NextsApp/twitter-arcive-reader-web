@@ -3,7 +3,11 @@ import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom'
 import { Dashboard } from '../modules/dashboard'
 import { ListItem, NavigationDrawer, FontIcon } from 'react-md'
 import navigationItems from './navigation-items'
-import Footer from "../components/footer/footer"
+import Footer from '../components/footer/footer'
+import { connect } from 'react-redux'
+import { selectAppState } from '../modules/app/selectors'
+import { APP_STATES } from '../modules/app/constants'
+import { ZipReader } from '../modules/zip-reader'
 
 function NavItemLink({ label, to, icon, exact }: any): React.ReactElement {
   return (
@@ -23,7 +27,19 @@ function NavItemLink({ label, to, icon, exact }: any): React.ReactElement {
   )
 }
 
-const Navigation: React.FunctionComponent = props => {
+interface INavigationProps {
+  appState?: string
+  children?: any
+}
+
+const Navigation: React.FunctionComponent = (props: INavigationProps) => {
+  let visible: boolean = true
+  let defaultComponent: any = Dashboard
+  if (props.appState === APP_STATES.UNKNOWN) {
+    visible = false
+    defaultComponent = ZipReader
+  }
+
   return (
     <Router>
       <NavigationDrawer
@@ -35,15 +51,22 @@ const Navigation: React.FunctionComponent = props => {
         navItems={navigationItems.map((props, i) => (
           <NavItemLink {...props} key={i} />
         ))}
+        visible={visible}
         contentId="content-navigator"
-        footer={ <Footer /> }
+        footer={<Footer />}
       >
         <Switch>
-          <Route path="/" component={Dashboard} />
+          <Route path="/" component={defaultComponent} />
         </Switch>
       </NavigationDrawer>
     </Router>
   )
 }
 
-export default Navigation
+const mapStateToProps = (state: any) => {
+  return {
+    appState: selectAppState(state),
+  }
+}
+
+export default connect(mapStateToProps)(Navigation)

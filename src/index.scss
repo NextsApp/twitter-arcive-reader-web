@@ -1,7 +1,20 @@
-@import './components/footer/footer-style';
 @import '../node_modules/react-md/src/scss/react-md';
+
+/* colors */
+$primary: #233447;
+$secondary: #ffad00;
+$bg-color: rgba(223, 239, 251, 0.99);
+$md-primary-color: $primary;
+$md-secondary-color: $secondary;
+
+/* include react.md */
 @include react-md-everything;
 
-.md-paper--1 {
-  box-shadow: none;
-}
+/* defaults */
+@import './assets/styles/initial';
+
+/* custom (containers & components) styles */
+@import './components/footer/footer-style';
+@import './modules/zip-reader/zip-reader';
+
+

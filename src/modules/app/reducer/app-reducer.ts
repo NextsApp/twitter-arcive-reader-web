@@ -1,9 +1,12 @@
 import { APP_STORE_APP_INFO } from '../'
 
+export interface InterfaceAppState {
+  state: string
+}
 
 export function reducer(
-  state = {
-    state: 'loading',
+  state: InterfaceAppState = {
+    state: 'unknown',
   },
   action: any,
 ) {

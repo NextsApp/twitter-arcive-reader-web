@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Card, CardTitle, CardText } from 'react-md'
+import { Card, CardText } from 'react-md'
 
 // props & state ---------------------------------------------------------------
 interface InterfaceBaseProps {
@@ -14,8 +14,7 @@ interface InterfaceBaseState {
 class Base extends React.PureComponent<InterfaceBaseProps, InterfaceBaseState> {
   render() {
     return (
-      <Card style={{ minHeight: 100 }}>
-        <CardTitle title={'Macera Devam Ediyor'} />
+      <Card>
         <CardText>{this.props.children}</CardText>
       </Card>
     )

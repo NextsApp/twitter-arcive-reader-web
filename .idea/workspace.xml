@@ -1,19 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6eb5f2ac-b322-457d-bd14-0a3b35153aef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/footer/footer-style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/footer/footer.tsx" afterDir="false" />
+    <list default="true" id="6eb5f2ac-b322-457d-bd14-0a3b35153aef" name="Default Changelist" comment="add footer component">
+      <change afterPath="$PROJECT_DIR$/src/components/base/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/error-message/error-message.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/error-message/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/footer/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/i18n/i18n.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/i18n/translations/en.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/modules/app/constants.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/modules/app/selectors/app-states.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/modules/app/selectors/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/zip-reader/components/file-info.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/zip-reader/components/file-read-progress.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/zip-reader/components/file-upload-form.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/zip-reader/components/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/zip-reader/constants.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/modules/zip-reader/containers/index.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/modules/zip-reader/containers/zip-reader.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/zip-reader/helpers/zip-reader.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/modules/zip-reader/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/zip-reader/zip-reader.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/initial.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/initial.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/base/base.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/base/base.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/footer-style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/footer-style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/footer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/app/reducer/app-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/app/reducer/app-reducer.ts" afterDir="false" />
@@ -22,6 +39,7 @@
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <list id="c34e2574-2c10-49d0-aa7f-6a04cf7bca1f" name="ignore" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,20 +61,25 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/i18n" />
+      <recent name="$PROJECT_DIR$/src/components/error-message" />
       <recent name="$PROJECT_DIR$/src/modules/app" />
       <recent name="$PROJECT_DIR$/src/modules/dashboard/containers" />
       <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/src/assets/styles" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -110,8 +133,37 @@
       <option name="project" value="LOCAL" />
       <updated>1570175274014</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add footer component">
+      <created>1570175318789</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1570175318789</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6eb5f2ac-b322-457d-bd14-0a3b35153aef" name="Default Changelist" comment="add footer component" />
+      <created>1570210460945</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1570210460945</updated>
+      <workItem from="1570210467171" duration="20538000" />
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
@@ -120,6 +172,7 @@
     <MESSAGE value="add react-material-design and react-route" />
     <MESSAGE value="implement redux" />
     <MESSAGE value="add .editorconfig" />
-    <option name="LAST_COMMIT_MESSAGE" value="add .editorconfig" />
+    <MESSAGE value="add footer component" />
+    <option name="LAST_COMMIT_MESSAGE" value="add footer component" />
   </component>
 </project>
