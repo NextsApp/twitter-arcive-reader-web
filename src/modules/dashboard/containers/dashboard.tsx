@@ -17,7 +17,7 @@ export class Dashboard extends React.Component<InterfaceDashboardProps, Interfac
   render() {
     const { appState } = this.props
 
-    return <Base>{appState === APP_STATES.UNKNOWN && <ZipReader />}</Base>
+    return <Base>{appState === APP_STATES.UNKNOWN && <ZipReader />} Dashboard </Base>
   }
 }
 

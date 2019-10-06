@@ -125,6 +125,8 @@ class ZipReader extends React.Component<InterfaceZipReaderProps, InterfaceZipRea
             </Trans>
           </h4>
 
+
+
           <hr className="md-background--primary " />
           {this.state.fileTypeError !== '' && <ErrorMessage message={t(this.state.fileTypeError)} />}
           {this.renderContent()}

@@ -8,7 +8,7 @@ const navigationItems = [
   },
   {
     label: 'Tweets',
-    to: `${TO_PREFIX}/Tweets`,
+    to: `${TO_PREFIX}/tweets`,
     icon: 'edit',
   },
   {
@@ -29,12 +29,12 @@ const navigationItems = [
   {
     label: 'Blocked',
     to: `${TO_PREFIX}/profile`,
-    icon: 'account_circle',
+    icon: 'block',
   },
   {
     label: 'Likes',
-    to: `${TO_PREFIX}/profile`,
-    icon: 'account_circle',
+    to: `${TO_PREFIX}/likes`,
+    icon: 'favorite',
   },
 ]
 

@@ -1,28 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6eb5f2ac-b322-457d-bd14-0a3b35153aef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/global-type-definition.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/i18n/translations/de.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/app/actions/app-actions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/zip-reader/helpers/index.ts" afterDir="false" />
+    <list default="true" id="6eb5f2ac-b322-457d-bd14-0a3b35153aef" name="Default Changelist" comment="implement reading twitter archive file and fix translation">
+      <change afterPath="$PROJECT_DIR$/src/modules/dm/containers/direct-messages.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/dm/containers/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/dm/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/styles/initial.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/initial.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer/footer-style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/footer-style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer/footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/i18n/i18n.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18n/i18n.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/i18n/translations/en.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18n/translations/en.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/app/actions/action-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/app/actions/action-types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/app/actions/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/app/actions/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/app/reducer/app-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/app/reducer/app-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/zip-reader/components/file-read-progress.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/zip-reader/components/file-read-progress.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/zip-reader/constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/zip-reader/constants.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/i18n/translations/de.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18n/translations/de.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/dashboard/containers/dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/dashboard/containers/dashboard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/tweets/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/tweets/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/tweets/reducer/tweets-reducer.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/zip-reader/containers/zip-reader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/zip-reader/containers/zip-reader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/zip-reader/helpers/zip-reader.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/zip-reader/helpers/zip-reader.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/zip-reader/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/zip-reader/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/zip-reader/zip-reader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/zip-reader/zip-reader.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/navigation/navigation-items.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/navigation/navigation-items.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/navigation/navigation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/navigation/navigation.tsx" afterDir="false" />
     </list>
     <list id="c34e2574-2c10-49d0-aa7f-6a04cf7bca1f" name="ignore" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -132,7 +123,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570210460945</updated>
-      <workItem from="1570210467171" duration="37876000" />
+      <workItem from="1570210467171" duration="41022000" />
     </task>
     <task id="LOCAL-00007" summary="add translation i18next">
       <created>1570267705456</created>
@@ -148,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570267731968</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="implement reading twitter archive file and fix translation">
+      <created>1570305604174</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1570305604174</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,6 +173,7 @@
     <MESSAGE value="add footer component" />
     <MESSAGE value="add translation i18next" />
     <MESSAGE value="implement reading zip file" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement reading zip file" />
+    <MESSAGE value="implement reading twitter archive file and fix translation" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement reading twitter archive file and fix translation" />
   </component>
 </project>

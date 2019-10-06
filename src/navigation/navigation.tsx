@@ -1,13 +1,14 @@
 import * as React from 'react'
 import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom'
-import { Dashboard } from '../modules/dashboard'
+
+import { Dashboard, Tweets, ZipReader, DirectMessages } from '../modules'
 import { ListItem, NavigationDrawer, FontIcon } from 'react-md'
 import navigationItems from './navigation-items'
 import Footer from '../components/footer/footer'
 import { connect } from 'react-redux'
 import { selectAppState } from '../modules/app/selectors'
 import { APP_STATES } from '../modules/app/constants'
-import { ZipReader } from '../modules/zip-reader'
+import dashboard from '../modules/dashboard/containers/dashboard'
 
 function NavItemLink({ label, to, icon, exact }: any): React.ReactElement {
   return (
@@ -34,10 +35,8 @@ interface INavigationProps {
 
 const Navigation: React.FunctionComponent = (props: INavigationProps) => {
   let visible: boolean = true
-  let defaultComponent: any = Dashboard
   if (props.appState === APP_STATES.UNKNOWN) {
     visible = false
-    defaultComponent = ZipReader
   }
 
   return (
@@ -55,9 +54,16 @@ const Navigation: React.FunctionComponent = (props: INavigationProps) => {
         contentId="content-navigator"
         footer={<Footer />}
       >
-        <Switch>
-          <Route path="/" component={defaultComponent} />
-        </Switch>
+        {!visible ? (
+          <ZipReader />
+        ) : (
+          <Switch>
+            <Route path="/" exact component={dashboard} />
+            <Route path="/dashboard" exact component={Dashboard} />
+            <Route path="/tweets" exact component={Tweets} />
+            <Route path="/dm" exact component={DirectMessages} />
+          </Switch>
+        )}
       </NavigationDrawer>
     </Router>
   )
