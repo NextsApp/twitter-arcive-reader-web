@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6eb5f2ac-b322-457d-bd14-0a3b35153aef" name="Default Changelist" comment="implement reading twitter archive file and fix translation">
-      <change afterPath="$PROJECT_DIR$/src/modules/dm/containers/direct-messages.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/dm/containers/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/dm/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/index.ts" afterDir="false" />
+    <list default="true" id="6eb5f2ac-b322-457d-bd14-0a3b35153aef" name="Default Changelist" comment="fix bugs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/i18n/translations/de.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18n/translations/de.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/dashboard/containers/dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/dashboard/containers/dashboard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/tweets/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/tweets/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/tweets/reducer/tweets-reducer.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/zip-reader/containers/zip-reader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/zip-reader/containers/zip-reader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/navigation/navigation-items.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/navigation/navigation-items.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/navigation/navigation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/navigation/navigation.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <list id="c34e2574-2c10-49d0-aa7f-6a04cf7bca1f" name="ignore" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -123,7 +113,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570210460945</updated>
-      <workItem from="1570210467171" duration="41022000" />
+      <workItem from="1570210467171" duration="43487000" />
     </task>
     <task id="LOCAL-00007" summary="add translation i18next">
       <created>1570267705456</created>
@@ -146,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570305604174</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fix bugs">
+      <created>1570360579483</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1570360579483</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,6 +171,7 @@
     <MESSAGE value="add translation i18next" />
     <MESSAGE value="implement reading zip file" />
     <MESSAGE value="implement reading twitter archive file and fix translation" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement reading twitter archive file and fix translation" />
+    <MESSAGE value="fix bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bugs" />
   </component>
 </project>
